@@ -185,7 +185,7 @@ Brown.TerryN@epa.gov
 
 # Resources
 
- - This presentation FIXME
- - [Git intro](http://swcarpentry.github.io/git-novice/) from
-   [SoftWare Carpentry](http://software-carpentry.org/)
+ - [This presentation](http://tbnorth.github.io/git_for_r/)
+ - [Git intro.](http://swcarpentry.github.io/git-novice/) from
+   [Software Carpentry](http://software-carpentry.org/)
  - [Jeff Hollister's intro.](https://github.com/jhollist/github_101), with cats
