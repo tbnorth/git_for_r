@@ -94,6 +94,10 @@ Brown.TerryN@epa.gov
 
  - `working tree` - your files and folders
 
+
+
+## Git terms, nouns
+
  - `branch` - a distinct series of commits used to isolate development
    of a particular feature from the main code, or perhaps to isolate
    incoming non-QA'ed data from the main, QA'ed set of data
@@ -115,6 +119,10 @@ Brown.TerryN@epa.gov
  - `push` - send changes (commits) from this repository to another
 
  - `pull` - bring changes (commits) from another repository to this one
+
+
+
+## Git terms, verbs
 
  - `checkout` - change some or all of the working tree to match
    a particular commit or branch
