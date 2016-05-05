@@ -1,12 +1,14 @@
 # Version control and R
 
+http://tbnorth.github.io/git_for_r/
+
 Terry N. Brown
 
 Brown.TerryN@epa.gov
 
 
 
-# Version Control
+## Version Control
 
  - You create `commits` (or snapshots, or versions) of all the
    components of a project at a point in time
@@ -21,7 +23,7 @@ Brown.TerryN@epa.gov
    changed
 
 
-# Version Control cont.
+## Version Control cont.
 
  - Version control tools can (usually) automatically merge
    changes to the same file by different authors
@@ -31,15 +33,15 @@ Brown.TerryN@epa.gov
 
  - Version control tools, and git in particular, provide a way of
    identifying the version of code which produced a particular output
-   
+
    <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Reproducible results
 
 
-# Version control with `git`
+## Version control with `git`
 
  - `git` got all the ~~delegates~~ users, there's nothing else to use
- 
- - People use git and GitHub for all sorts of things, for example 
+
+ - People use git and GitHub for all sorts of things, for example
    as a way of installing R packages
 
  - GitHub has lots of added benefits, issue tracking, task management,
@@ -48,7 +50,7 @@ Brown.TerryN@epa.gov
    <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> learning git has wide spread uses
 
 
-# Manual version control
+## Manual version control
 
  - Can't you just use file names / folders to do this?
 
@@ -56,7 +58,7 @@ Brown.TerryN@epa.gov
    `crosscor.working.R` etc.
 
  - You *could*, but will you snapshot all the files you mean to?
- 
+
  - Including current outputs?
 
  - Will it be so easy you retain the “<Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> zero concern about changing
@@ -64,10 +66,10 @@ Brown.TerryN@epa.gov
 
 
 
-# git, GitHub, <br/>GitHub Desktop
+## git, GitHub, <br/>GitHub Desktop
 
  - `git` is a command line program for version control, originally
-   developed by Linus Torvalds.  There are others (bazaar (bzr), 
+   developed by Linus Torvalds.  There are others (bazaar (bzr),
    subversion (svn), cvs, rcs, etc.)
 
  - `GitHub` is a company that hosts git repositories online with
@@ -79,7 +81,7 @@ Brown.TerryN@epa.gov
 
 
 
-# Git terms, nouns
+## Git terms, nouns
 
  - `repository` - the git files that record all previous versions
    of a project.  Usually a special folder called `.git`.
@@ -96,11 +98,14 @@ Brown.TerryN@epa.gov
    of a particular feature from the main code, or perhaps to isolate
    incoming non-QA'ed data from the main, QA'ed set of data
 
+ - `tag` - an arbitary name associated with a particular commit, e.g.
+   “v0.2.1” or “to-JGRL-20160312”
+
  - `fork` - a copy of a repository on GitHub, for “unilateral” collaboration
 
 
 
-# Git terms, verbs
+## Git terms, verbs
 
  - `init` - creat a new empty repository
 
@@ -109,7 +114,7 @@ Brown.TerryN@epa.gov
 
  - `push` - send changes (commits) from this repository to another
 
- - `pull` - bring changes (commits) another repository to this one
+ - `pull` - bring changes (commits) from another repository to this one
 
  - `checkout` - change some or all of the working tree to match
    a particular commit or branch
@@ -118,7 +123,21 @@ Brown.TerryN@epa.gov
 
 
 
-# Cats
+## Tools
+
+ - git, the command line tool
+
+   - plain git and GitHub Desktop install “Git Bash” in Windows
+
+ - GitHub Desktop
+
+ - gitk, for visualizing changes over time, launch from command line
+
+ - Meld, http://meldmerge.org/, useful for comparing versions
+
+
+
+## Cats
 
 [Jeff Hollister's intro.](https://github.com/jhollist/github_101), with cats,
 as a taste of the command line interface for git.
@@ -179,28 +198,52 @@ as a taste of the command line interface for git.
 
 
 
-# Version control and R
+## Version control and R
+
+ - Add and commit received data files, git confirms they
+   haven't changed (or tracks changes you choose to make)
+
+ - Add and commit outputs, git lets you know when they
+   change, and when they don't
+
+   - e.g. your code's finally working, and you want to
+     delete all the junk that wasn't part of the solution.
+
+     As well as letting you undo deletions if you need to, git can
+     confirm that the new code produces the same results
+
+   <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> git catches unintended changes
 
 
 
+## Git and binary files
 
-# GitHub, UMN, EPA
+ - Just add them, don't worry about it
+
+ - git can't analyze changes between versions of binary
+   files, binary files that change are not git's thing
+
+ - For huge binary files, there's the [Git Large File Storage](https://git-lfs.github.com/) extension.
+
+
+
+## GitHub, UMN, EPA
 
  - UMN has a GitHub Enterprise deployment, https://github.umn.edu/
- 
-   - unlimited private repositories
-   - sharing with public harder, can create guest accounts
+
+   - Unlimited private repositories
+   - Sharing with public harder, can create guest accounts
 
  - EPA has an Organisation on the public GitHub site, https://github.com/USEPA
 
-   - can request private repositories, somewhat limiting
-   - easy to share with public
+   - Can request private repositories, somewhat limiting
+   - Easy to share with public
 
 
 
-# Resources
+## Resources
 
- - [This presentation](http://tbnorth.github.io/git_for_r/)
+ - This presentation http://tbnorth.github.io/git_for_r/
  - [Git intro.](http://swcarpentry.github.io/git-novice/) from
    [Software Carpentry](http://software-carpentry.org/)
  - [Jeff Hollister's intro.](https://github.com/jhollist/github_101), with cats
