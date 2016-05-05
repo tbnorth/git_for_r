@@ -75,7 +75,7 @@ Brown.TerryN@epa.gov
    collaboration)
 
  - `GitHub Desktop` is a desktop application (i.e. user interface)
-   for git
+   for git (from the GitHub company)
 
 
 
@@ -119,6 +119,9 @@ Brown.TerryN@epa.gov
 
 
 # Cats
+
+[Jeff Hollister's intro.](https://github.com/jhollist/github_101), with cats,
+as a taste of the command line interface for git.
 
 
 <img src="jh_cats/exp01.png" height="650px"/>
@@ -175,11 +178,23 @@ Brown.TerryN@epa.gov
 <img src="jh_cats/exp18.png" height="650px"/>
 
 
-<img src="jh_cats/exp19.png" height="650px"/>
+
+# Version control and R
 
 
 
 
+# GitHub, UMN, EPA
+
+ - UMN has a GitHub Enterprise deployment, https://github.umn.edu/
+ 
+   - unlimited private repositories
+   - sharing with public harder, can create guest accounts
+
+ - EPA has an Organisation on the public GitHub site, https://github.com/USEPA
+
+   - can request private repositories, somewhat limiting
+   - easy to share with public
 
 
 
@@ -189,3 +204,6 @@ Brown.TerryN@epa.gov
  - [Git intro.](http://swcarpentry.github.io/git-novice/) from
    [Software Carpentry](http://software-carpentry.org/)
  - [Jeff Hollister's intro.](https://github.com/jhollist/github_101), with cats
+ - An [interactive cheat sheet](http://ndpsoftware.com/git-cheatsheet.html)
+ - The [git](https://git-scm.com/) and [GitHub](https://github.com/)
+   sites
