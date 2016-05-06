@@ -31,8 +31,8 @@ Brown.TerryN@epa.gov
    <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Gives you “track changes” collaboration
    for everything (because everything should be a text file ;-)
 
- - Version control tools, and git in particular, provide a way of
-   identifying the version of code which produced a particular output
+ - Version control, especially git, provides an identity and a way to
+   recreate the version of code which produced a particular output
 
    <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Reproducible results
 
@@ -49,6 +49,7 @@ Brown.TerryN@epa.gov
 
    <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> learning git has wide spread uses
 
+   :star: learning git has wide spread uses
 
 ## Manual version control
 
