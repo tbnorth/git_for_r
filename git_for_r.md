@@ -37,6 +37,19 @@ Brown.TerryN@epa.gov
    <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Reproducible results
 
 
+## Version Control cont.
+
+ - Pushing (syncing) to a remote repository enables:
+
+   - Collaboration
+
+   - Backup
+
+   - Code mobility (work in the office and at home etc.)
+
+   <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Backup and mobility as a side effect
+
+
 ## Version control with `git`
 
  - `git` got all the ~~delegates~~ users, there's nothing else to use
@@ -45,11 +58,10 @@ Brown.TerryN@epa.gov
    as a way of installing R packages
 
  - GitHub has lots of added benefits, issue tracking, task management,
-   free hosting (for public work).
+   free hosting (for public work)
 
-   <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> learning git has wide spread uses
+   <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Learning git has wide spread uses
 
-   :star: learning git has wide spread uses
 
 ## Manual version control
 
@@ -85,7 +97,7 @@ Brown.TerryN@epa.gov
 ## Git terms, nouns
 
  - `repository` - the git files that record all previous versions
-   of a project.  Usually a special folder called `.git`.
+   of a project.  Usually a special folder called `.git`
 
  - `commit` - a particular snapshot of a project at a specific time,
    exists in a repository
@@ -94,7 +106,6 @@ Brown.TerryN@epa.gov
    commit are collected
 
  - `working tree` - your files and folders
-
 
 
 ## Git terms, nouns
@@ -107,7 +118,6 @@ Brown.TerryN@epa.gov
    “v0.2.1” or “to-JGRL-20160312”
 
  - `fork` - a copy of a repository on GitHub, for “unilateral” collaboration
-
 
 
 ## Git terms, verbs
@@ -132,6 +142,54 @@ Brown.TerryN@epa.gov
 
 
 
+## How Version Control works
+
+ - records the changes (or absence of change) for files between
+   commits
+
+ - git also uses “hashes” as it filing system and unit of identity
+
+ - hashes (or digital fingerprints) give git extra features in terms
+   of verifiable or non-revisable data analysis processes
+
+
+
+## Version control and R
+
+ - Add and commit received data files, git confirms they
+   haven't changed (or tracks changes you choose to make)
+
+ - Add and commit outputs, git lets you know when they
+   change, and when they don't
+
+   - e.g. your code's finally working, and you want to
+     delete all the junk that wasn't part of the solution.
+
+     As well as letting you undo deletions if you need to, git can
+     confirm that the new code produces the same results
+
+   <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> git catches unintended changes
+
+
+
+## Advantages
+
+   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> *zero* concern about changing code
+
+   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> back to a working version, or see what changed
+
+   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Gives you “track changes” collaboration
+
+   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Reproducible results
+
+   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Backup and mobility as a side effect
+
+   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Learning git has wide spread uses
+
+   - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> git catches unintended changes
+
+
+
 ## Tools
 
  - git, the command line tool
@@ -143,6 +201,19 @@ Brown.TerryN@epa.gov
  - gitk, for visualizing changes over time, launch from command line
 
  - Meld, http://meldmerge.org/, useful for comparing versions
+
+
+
+## A simple demo
+
+
+## First time set up
+
+```
+git config --global user.name "Terry N. Brown"
+git config --global user.email "terry_n_brown@yahoo.com"
+git config --global core.editor notepad
+```
 
 
 
@@ -207,24 +278,6 @@ as a taste of the command line interface for git.
 
 
 
-## Version control and R
-
- - Add and commit received data files, git confirms they
-   haven't changed (or tracks changes you choose to make)
-
- - Add and commit outputs, git lets you know when they
-   change, and when they don't
-
-   - e.g. your code's finally working, and you want to
-     delete all the junk that wasn't part of the solution.
-
-     As well as letting you undo deletions if you need to, git can
-     confirm that the new code produces the same results
-
-   <Img src='star.png' style='width:1.5em;height:1.5em;margin:0;border:0;vertical-align:text-bottom;background:none'/> git catches unintended changes
-
-
-
 ## Git and binary files
 
  - Just add them, don't worry about it
@@ -247,6 +300,29 @@ as a taste of the command line interface for git.
 
    - Can request private repositories, somewhat limiting
    - Easy to share with public
+
+
+
+## Other features
+
+ - `git bisect`, for projects with dozens or thousands of commits, use a
+   bisection search for the commit which broke feature X
+
+```
+git bisect start
+git bisect bad  # things aren't working in the most recent commit
+git checkout HEAD~500  # go back 500 commits
+# test the feature
+git bisect good  # tell git it's working now, git checks out the
+                 # commit half way between the bad and the good
+# test the feature
+git bisect good  # tell git it's working here too
+# test the feature
+git bisect bad  # tell git it's broken here
+```
+
+Very quickly isolate a problem introduced at an unknown time.
+
 
 
 
