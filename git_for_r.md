@@ -138,6 +138,10 @@ Brown.TerryN@epa.gov
  - `checkout` - change some or all of the working tree to match
    a particular commit or branch
 
+ - `status` - show current status
+
+ - `log` - show log of commits
+
  - commit, branch, fork - the process of creating one of these things
 
 
@@ -172,6 +176,10 @@ Brown.TerryN@epa.gov
 
 
 
+## Version control and R-Studio
+
+
+
 ## Advantages
 
    - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> *zero* concern about changing code
@@ -190,37 +198,10 @@ Brown.TerryN@epa.gov
 
 
 
-## Tools
-
- - git, the command line tool
-
-   - plain git and GitHub Desktop install “Git Bash” in Windows
-
- - GitHub Desktop
-
- - gitk, for visualizing changes over time, launch from command line
-
- - Meld, http://meldmerge.org/, useful for comparing versions
-
-
-
-## A simple demo
-
-
-## First time set up
-
-```
-git config --global user.name "Terry N. Brown"
-git config --global user.email "terry_n_brown@yahoo.com"
-git config --global core.editor notepad
-```
-
-
-
 ## Cats
 
 [Jeff Hollister's intro.](https://github.com/jhollist/github_101), with cats,
-as a taste of the command line interface for git.
+as a taste of the command line interface for git
 
 
 <img src="jh_cats/exp01.png" height="650px"/>
@@ -278,6 +259,103 @@ as a taste of the command line interface for git.
 
 
 
+## A simple demo
+
+
+## First time set up
+
+```
+git config --global user.name "Terry N. Brown"
+git config --global user.email "terry_n_brown@yahoo.com"
+git config --global core.editor notepad
+```
+
+<!--
+
+ - new project
+
+ - make folder
+
+ - copy in .xls
+
+ - save .csv
+
+ - write .R code
+
+ - git init / status
+
+ - git add / status
+
+ - git commit / status
+
+ - modify code
+
+ - view diff
+
+ - status/add/commit
+
+ - modify code
+
+ - status/add/commit
+
+ - view log
+
+ - view diff of different versions
+
+ --
+
+ - clone folder
+
+ - change in one
+
+ - merge in other
+
+ - show remotes
+
+-->
+
+
+
+## Collaboration
+
+ - You can collaborate “in-house” with three (or more) copies of a
+   repository
+
+   - User A - D:\mystuff\stream_temp\
+   - User B - C:\Users\jbloggs\Desktop\stream_temp\
+   - Shared folder - L:\AllUsers\streams\stream_temp\
+
+ - Users `push` and `pull` to and from the shared repository
+
+ - git handles updates and any conflicts
+
+
+## GitHub Collaboration
+
+- Create an account on https://GitHub.com/ - it's free
+
+- Create a new repository, *do not* add any of the default
+  pieces GitHub suggests (README.md, License etc.)
+
+- Follow GitHub's instructions to push your existing repo.
+  to GitHub.
+
+
+
+## Tools
+
+ - git, the command line tool
+
+   - plain git and GitHub Desktop install “Git Bash” in Windows
+
+ - GitHub Desktop
+
+ - gitk, for visualizing changes over time, launch from command line
+
+ - Meld, http://meldmerge.org/, useful for comparing versions
+
+
+
 ## Git and binary files
 
  - Just add them, don't worry about it
@@ -285,7 +363,7 @@ as a taste of the command line interface for git.
  - git can't analyze changes between versions of binary
    files, binary files that change are not git's thing
 
- - For huge binary files, there's the [Git Large File Storage](https://git-lfs.github.com/) extension.
+ - For huge binary files, there's the [Git Large File Storage](https://git-lfs.github.com/) extension
 
 
 
@@ -303,7 +381,7 @@ as a taste of the command line interface for git.
 
 
 
-## Other features
+## Other tricks
 
  - `git bisect`, for projects with dozens or thousands of commits, use a
    bisection search for the commit which broke feature X
@@ -321,8 +399,24 @@ git bisect good  # tell git it's working here too
 git bisect bad  # tell git it's broken here
 ```
 
-Very quickly isolate a problem introduced at an unknown time.
+Very quickly isolate a problem introduced at an unknown time
 
+
+## .gitignore
+
+ - `.gitignore` is *just a file*, managed like any other file, you
+   `git add` it when you first create it and when you modify it.
+   It gets included in commits, etc. etc.
+
+ - Files listed in .gitingore are ignored by git, e.g:
+
+```text
+safe_backup
+*.Rdata
+# text following '#' are comments
+```
+
+  Would ignore all .Rdata files and stop reporting the folder `safe_backup` in `git status`
 
 
 
