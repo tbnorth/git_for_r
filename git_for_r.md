@@ -52,7 +52,8 @@ Brown.TerryN@epa.gov
 
 ## Version control with `git`
 
- - `git` got all the ~~delegates~~ users, there's nothing else to use
+ - `git` got all the ~~delegates~~ users, there's nothing else it
+   would make sense to learn
 
  - People use git and GitHub for all sorts of things, for example
    as a way of installing R packages
@@ -102,20 +103,20 @@ Brown.TerryN@epa.gov
  - `commit` - a particular snapshot of a project at a specific time,
    exists in a repository
 
+ - `working tree` - your files and folders
+
  - `index` - a staging area where the changes to be included in a
    commit are collected
-
- - `working tree` - your files and folders
 
 
 ## Git terms, nouns
 
+ - `tag` - an arbitrary name associated with a particular commit, e.g.
+   “v0.2.1” or “to-JGRL-20160312”
+
  - `branch` - a distinct series of commits used to isolate development
    of a particular feature from the main code, or perhaps to isolate
    incoming non-QA'ed data from the main, QA'ed set of data
-
- - `tag` - an arbitrary name associated with a particular commit, e.g.
-   “v0.2.1” or “to-JGRL-20160312”
 
  - `fork` - a copy of a repository on GitHub, for “unilateral” collaboration
 
@@ -132,15 +133,14 @@ Brown.TerryN@epa.gov
  - `pull` - bring changes (commits) from another repository to this one
 
 
-
 ## Git terms, verbs
-
- - `checkout` - change some or all of the working tree to match
-   a particular commit or branch
 
  - `status` - show current status
 
  - `log` - show log of commits
+
+ - `checkout` - change some or all of the working tree to match
+   a particular commit or branch
 
  - commit, branch, fork - the process of creating one of these things
 
@@ -176,10 +176,6 @@ Brown.TerryN@epa.gov
 
 
 
-## Version control and R-Studio
-
-
-
 ## Advantages
 
    - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> *zero* concern about changing code
@@ -195,6 +191,9 @@ Brown.TerryN@epa.gov
    - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> Learning git has wide spread uses
 
    - <Img src='star.png' style='width:1em;height:1em;margin:0;border:0;vertical-align:text-bottom;background:none'/> git catches unintended changes
+
+(note: most apply to single user coding, you don't need to be
+collaborating to benefit from version control)
 
 
 
@@ -256,6 +255,20 @@ as a taste of the command line interface for git
 
 
 <img src="jh_cats/exp18.png" height="650px"/>
+
+
+
+## Installation
+
+ - You can install basic git for Windows from https://git-scm.com/
+ 
+ - or GitHub Desktop from https://desktop.github.com/
+  
+   - GitHub Desktop is a superset of basic git
+
+ - Both install a git command line environment called `Git Bash` which
+   includes a number of other useful command line utilities as a side
+   effect
 
 
 
@@ -353,6 +366,14 @@ git config --global core.editor notepad
  - gitk, for visualizing changes over time, launch from command line
 
  - Meld, http://meldmerge.org/, useful for comparing versions
+ 
+ - R-Studio has git suppport
+
+
+
+## Version control and R-Studio
+
+R-Studio has built in support for basic git operations.
 
 
 
