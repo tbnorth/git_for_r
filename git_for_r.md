@@ -85,7 +85,7 @@ Brown.TerryN@epa.gov
    developed by Linus Torvalds.  There are others (bazaar (bzr),
    subversion (svn), cvs, rcs, etc.)
 
- - `GitHub` is a company that hosts git repositories online with
+ - `GitHub` is a company that hosts git repositories on-line with
    value added features (issue tracking, web hosting, enhanced
    collaboration)
 
@@ -114,7 +114,7 @@ Brown.TerryN@epa.gov
    of a particular feature from the main code, or perhaps to isolate
    incoming non-QA'ed data from the main, QA'ed set of data
 
- - `tag` - an arbitary name associated with a particular commit, e.g.
+ - `tag` - an arbitrary name associated with a particular commit, e.g.
    “v0.2.1” or “to-JGRL-20160312”
 
  - `fork` - a copy of a repository on GitHub, for “unilateral” collaboration
@@ -122,7 +122,7 @@ Brown.TerryN@epa.gov
 
 ## Git terms, verbs
 
- - `init` - creat a new empty repository
+ - `init` - create a new empty repository
 
  - `clone` - making a copy of repository, from local file system
    or remote location via web
@@ -374,7 +374,7 @@ git config --global core.editor notepad
    - Unlimited private repositories
    - Sharing with public harder, can create guest accounts
 
- - EPA has an Organisation on the public GitHub site, https://github.com/USEPA
+ - EPA has an Organization on the public GitHub site, https://github.com/USEPA
 
    - Can request private repositories, somewhat limiting
    - Easy to share with public
