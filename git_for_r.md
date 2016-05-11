@@ -80,6 +80,21 @@ Brown.TerryN@epa.gov
 
 
 
+## How Version Control works
+
+ - records the changes (or absence of change) for files between
+   commits
+
+ - git also uses “hashes” as it filing system and unit of identity
+
+ - hashes (or digital fingerprints) give git extra features in terms
+   of verifiable or non-revisable data analysis processes
+
+ - modern VC systems snapshot the state of all the files in a project,
+   not just individual files (vs. older systems like RCS)
+
+
+
 ## git, GitHub, <br/>GitHub Desktop
 
  - `git` is a command line program for version control, originally
@@ -143,18 +158,6 @@ Brown.TerryN@epa.gov
    a particular commit or branch
 
  - commit, branch, fork - the process of creating one of these things
-
-
-
-## How Version Control works
-
- - records the changes (or absence of change) for files between
-   commits
-
- - git also uses “hashes” as it filing system and unit of identity
-
- - hashes (or digital fingerprints) give git extra features in terms
-   of verifiable or non-revisable data analysis processes
 
 
 
