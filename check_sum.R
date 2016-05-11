@@ -1,3 +1,11 @@
+utf8ToInt('a')
+utf8ToInt('b')
+utf8ToInt('c')
+utf8ToInt('1')
+utf8ToInt('22')
+utf8ToInt('333')
+utf8ToInt('☺')
+
 hash_text <- function (text) {
     # a two digit (00-99) hash (or fingerprint, or checksum) of text
     check <- 0
