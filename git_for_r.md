@@ -264,9 +264,9 @@ as a taste of the command line interface for git
 ## Installation
 
  - You can install basic git for Windows from https://git-scm.com/
- 
+
  - or GitHub Desktop from https://desktop.github.com/
-  
+
    - GitHub Desktop is a superset of basic git
 
  - Both install a git command line environment called `Git Bash` which
@@ -332,6 +332,44 @@ git config --global core.editor notepad
 
 
 
+## Going backwards
+
+How do you get back to a previous version?
+
+ - GitHub Desktop or R-Studio's interface or gitk will show you
+   changes over time, useful for recovering small snippets
+
+ - `git checkout path/to/file` will replace existing file with
+   version in last commit
+
+ - `git show <revision>:path/to/file` is handy, it just prints the
+    file, which you can direct into a new file if you want:
+```sh
+git show HEAD~4:import/load_data.R  # show load_data.R from 4 commits ago
+git show 3e2f4a:import/load_data.R  # show load_data.R from commit 3e2f4a
+```
+
+
+## Going backwards
+
+ - `git reset` winds back the whole project
+
+   - `git reset --soft` as if the last `git commit` never happened -
+     just changes the commit considered “latest” in repo.
+
+   - `git reset --mixed` as if the last `git add / commit ` never happened -
+     default, as above plus resets index (staging area) to match repo.
+
+   - `git reset --hard` as if the last `git add / commit ` never happened -
+     overwrites changed working files to make them match repo.
+
+  - be careful with `--hard`, it can delete content
+
+ - you can always just copy the whole folder and experiment in the copy,
+   or git clone the folder, to copy only the managed files
+
+
+
 ## Collaboration
 
  - You can collaborate “in-house” with three (or more) copies of a
@@ -369,8 +407,18 @@ git config --global core.editor notepad
  - gitk, for visualizing changes over time, launch from command line
 
  - Meld, http://meldmerge.org/, useful for comparing versions
- 
+
  - R-Studio has git suppport
+
+
+## GitHub Desktop
+
+![img/ghd00.png](img/ghd00.png)
+
+
+## GitHub Desktop
+
+![img/ghd01.png](img/ghd01.png)
 
 
 
