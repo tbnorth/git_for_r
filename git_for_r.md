@@ -408,7 +408,7 @@ git show 3e2f4a:import/load_data.R  # show load_data.R from commit 3e2f4a
 
  - Meld, http://meldmerge.org/, useful for comparing versions
 
- - R-Studio has git suppport
+ - R-Studio has git support
 
 
 ## GitHub Desktop
