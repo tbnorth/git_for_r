@@ -4,7 +4,7 @@ http://tbnorth.github.io/git_for_r/
 
 Terry N. Brown
 
-Brown.TerryN@epa.gov
+TerryNBrown@gmail.com
 
 
 
@@ -52,7 +52,7 @@ Brown.TerryN@epa.gov
 
 ## Version control with `git`
 
- - `git` got all the ~~delegates~~ users, there's nothing else it
+ - `git` got all the users, there's nothing else it
    would make sense to learn
 
  - People use git and GitHub for all sorts of things, for example
